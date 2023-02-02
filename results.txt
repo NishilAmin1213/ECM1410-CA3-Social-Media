@@ -1,0 +1,283 @@
+[36m.[0m
+[36m+--[0m [36mJUnit Jupiter[0m [32m[OK][0m
+[36m| '--[0m [36mSocialMediaTest[0m [32m[OK][0m
+[36m|   +--[0m [34mtestShowPostChildrenDetailsWhenNotActionablePost()[0m [32m[OK][0m
+[36m|   +--[0m [34mtestShowIndividualPostWhenPostIdNotRecognised()[0m [32m[OK][0m
+[36m|   +--[0m [34mtestGetMostEndorsedAccount()[0m [32m[OK][0m
+[36m|   +--[0m [34mtestEndorsePostWhenHandleNotReconised()[0m [32m[OK][0m
+[36m|   +--[0m [34mtestChangeAccountHandle()[0m [32m[OK][0m
+[36m|   +--[0m [34mtestSavePlatform()[0m [32m[OK][0m
+[36m|   +--[0m [31mtestShowAccount()[0m [31m[X][0m [31mIndex 0 out of bounds for length 0[0m
+[36m|   +--[0m [34mtestRemoveAccountRemovesPosts()[0m [32m[OK][0m
+[36m|   +--[0m [34mtestCreateDuplicatedHandles()[0m [32m[OK][0m
+[36m|   +--[0m [34mtestChangeAccountHandleWhenIllegalHandle()[0m [32m[OK][0m
+[36m|   +--[0m [34mtestCommentPostEmptyWhiteSpaces()[0m [32m[OK][0m
+[36m|   +--[0m [31mtestCreateAccountInvalidHandle()[0m [31m[X][0m [31mInvalid Handle: (1 failure)[0m
+[36m|   |   [0m[31m  	org.opentest4j.AssertionFailedError: A null handle is not legal. ==> Unexpected exception type thrown ==> expected: <socialmedia.InvalidHandleException> but was: <java.lang.NullPointerException>[0m
+[36m|   +--[0m [34mtestShowPostChildrenDetailsWhenPostIdNotReconised()[0m [32m[OK][0m
+[36m|   +--[0m [34mtestChangeAccountHandleWhenHandleNotRecognised()[0m [32m[OK][0m
+[36m|   +--[0m [31mtestEndorsePostTruncateMessage()[0m [31m[X][0m [31mEndorsements are posts and should not have a message with more than 100 character. If the length of the original message being endorsed plus the endorsement prefix is over 100, the message should have been truncated. ==> expected: <false> but was: <true>[0m
+[36m|   +--[0m [34mtestEndorsePost()[0m [32m[OK][0m
+[36m|   +--[0m [34mtestAddingHandlePreviouslyRemoved()[0m [32m[OK][0m
+[36m|   +--[0m [34mtestCommentPostWhenNotActionablePost()[0m [32m[OK][0m
+[36m|   +--[0m [34mtestLoadPlatform()[0m [32m[OK][0m
+[36m|   +--[0m [34mtestCommentPostMore100Characters()[0m [32m[OK][0m
+[36m|   +--[0m [31mtestEndorsePostDoesNotContainPrefix()[0m [31m[X][0m [31mEP@ missing in the endorsed message. ==> expected: <true> but was: <false>[0m
+[36m|   +--[0m [34mtestDeletePostCascadeEndorsementsDeletion()[0m [32m[OK][0m
+[36m|   +--[0m [34mtestErasePlatform()[0m [32m[OK][0m
+[36m|   +--[0m [34mtestDeletePostWhenPostIdNotReconised()[0m [32m[OK][0m
+[36m|   +--[0m [34mtestRemoveAccountById()[0m [32m[OK][0m
+[36m|   +--[0m [34mtestCreatePost()[0m [32m[OK][0m
+[36m|   +--[0m [34mtestAddingHandlePreviouslyUsed()[0m [32m[OK][0m
+[36m|   +--[0m [34mtestCreatePostWhenHandleNotReconised()[0m [32m[OK][0m
+[36m|   +--[0m [34mtestCommentPostWhenPostIdNotReconised()[0m [32m[OK][0m
+[36m|   +--[0m [34mtestShowAccountWhenHandleNotReconised()[0m [32m[OK][0m
+[36m|   +--[0m [34mtestGetMostEndorsedAccountAfterRemovingAccount()[0m [32m[OK][0m
+[36m|   +--[0m [31mtestShowPostChildrenDetails()[0m [31m[X][0m [31mChecking post children details based on the Javadoc example: (2 failures)[0m
+[36m|   |   [0m[31m  	org.opentest4j.AssertionFailedError: checking ID: 1 ==> expected: <7> but was: <13>[0m
+[36m|   |   [0m[31m  	org.opentest4j.AssertionFailedError: checking ID: 4 ==> expected: <1> but was: <5>[0m
+[36m|   +--[0m [34mtestDeletePost()[0m [32m[OK][0m
+[36m|   +--[0m [31mtestEndorsePostDoesNotContainEndorsedHandle()[0m [31m[X][0m [31mEndorsed account handle missing in the endorsed message. ==> expected: <true> but was: <false>[0m
+[36m|   +--[0m [34mtestGetMostEndorsedPost()[0m [32m[OK][0m
+[36m|   +--[0m [34mtestChangeAccountHandleWhenInvalidHandle()[0m [32m[OK][0m
+[36m|   +--[0m [34mtestCommentPostEmpty()[0m [32m[OK][0m
+[36m|   +--[0m [34mtestEndorsePostWhenPostIdNotReconised()[0m [32m[OK][0m
+[36m|   +--[0m [34mtestEndorsePostWhenNotActionablePost()[0m [32m[OK][0m
+[36m|   +--[0m [34mtestCreateThreeAccountsReturnsDifferentIds()[0m [32m[OK][0m
+[36m|   +--[0m [34mtestRemoveAccountIDNotRecognised()[0m [32m[OK][0m
+[36m|   +--[0m [34mtestWhenMostEndorsedPostIsNotFromMostEndorsedAccount()[0m [32m[OK][0m
+[36m|   +--[0m [31mtestCreateInvalidPost()[0m [31m[X][0m [31mChecking invalid posts: (1 failure)[0m
+[36m|   |   [0m[31m  	org.opentest4j.AssertionFailedError: Should not accept a post with more than 100 characters. ==> Expected socialmedia.InvalidPostException to be thrown, but nothing was thrown.[0m
+[36m|   +--[0m [31mtestDeletePostCascadeCommentsParentReplacement()[0m [31m[X][0m [31mUnexpected exception thrown: socialmedia.PostIDNotRecognisedException: Post does not exist![0m
+[36m|   +--[0m [34mtestCommentPostWhenHandleNotReconised()[0m [32m[OK][0m
+[36m|   +--[0m [31mtestGetMostEndorsedAccountAfterRemovingPost()[0m [31m[X][0m [31mAfter removing post ID: 4 (user3), most endorsed should be user1 ==> expected: <1> but was: <3>[0m
+[36m|   +--[0m [34mtestUpdateAccountDescription()[0m [32m[OK][0m
+[36m|   +--[0m [34mtestRemoveAccountHandleNotRecognised()[0m [32m[OK][0m
+[36m|   +--[0m [34mtestCreateAccountWithDescription()[0m [32m[OK][0m
+[36m|   +--[0m [31mtestUpdateAccountDescriptionHandleNotRecognised()[0m [31m[X][0m [31mExpected socialmedia.HandleNotRecognisedException to be thrown, but nothing was thrown.[0m
+[36m|   +--[0m [31mtestRemoveAccountUpdatesCounters()[0m [31m[X][0m [31mPost counters after removal of account: (1 failure)[0m
+[36m|   |   [0m[31m  	org.opentest4j.AssertionFailedError: Comment posts counter is wrong. ==> expected: <1> but was: <0>[0m
+[36m|   +--[0m [34mtestGetNumberOfAccounts()[0m [32m[OK][0m
+[36m|   +--[0m [34mtestGetTotalEndorsmentPosts()[0m [32m[OK][0m
+[36m|   +--[0m [34mtestPlatformIsCreatedEmpty()[0m [32m[OK][0m
+[36m|   +--[0m [34mtestRemoveAccountByHandle()[0m [32m[OK][0m
+[36m|   +--[0m [34mtestGetTotalOriginalPosts()[0m [32m[OK][0m
+[36m|   +--[0m [31mtestGetTotalCommentPosts()[0m [31m[X][0m [31mNumber of comment posts: (1 failure)[0m
+[36m|   |   [0m[31m  	org.opentest4j.AssertionFailedError: After adding and removing posts. ==> expected: <1> but was: <0>[0m
+[36m|   '--[0m [34mtestErasePlatformWillZeroCounters()[0m [32m[OK][0m
+[36m'--[0m [36mJUnit Vintage[0m [32m[OK][0m
+
+Failures (12):
+  JUnit Jupiter:SocialMediaTest:testShowAccount()
+    MethodSource [className = 'tests.SocialMediaTest', methodName = 'testShowAccount', methodParameterTypes = '']
+    => java.lang.ArrayIndexOutOfBoundsException: Index 0 out of bounds for length 0
+       socialmedia.Account.removePost(Account.java:240)
+       socialmedia.SocialMedia.deletePost(SocialMedia.java:462)
+       socialmedia.SocialMedia.deletePost(SocialMedia.java:495)
+       socialmedia.SocialMedia.deletePost(SocialMedia.java:487)
+       socialmedia.SocialMedia.removeAccount(SocialMedia.java:186)
+       tests.MiniSocialMediaTest.testShowAccount(MiniSocialMediaTest.java:348)
+       java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+       java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+       java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+       java.base/java.lang.reflect.Method.invoke(Method.java:567)
+       [...]
+  JUnit Jupiter:SocialMediaTest:testCreateAccountInvalidHandle()
+    MethodSource [className = 'tests.SocialMediaTest', methodName = 'testCreateAccountInvalidHandle', methodParameterTypes = '']
+    => org.opentest4j.MultipleFailuresError: Invalid Handle: (1 failure)
+	org.opentest4j.AssertionFailedError: A null handle is not legal. ==> Unexpected exception type thrown ==> expected: <socialmedia.InvalidHandleException> but was: <java.lang.NullPointerException>
+       org.junit.jupiter.api.AssertAll.assertAll(AssertAll.java:80)
+       org.junit.jupiter.api.AssertAll.assertAll(AssertAll.java:44)
+       org.junit.jupiter.api.Assertions.assertAll(Assertions.java:2911)
+       tests.MiniSocialMediaTest.testCreateAccountInvalidHandle(MiniSocialMediaTest.java:79)
+       java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+       [...]
+       Suppressed: org.opentest4j.AssertionFailedError: A null handle is not legal. ==> Unexpected exception type thrown ==> expected: <socialmedia.InvalidHandleException> but was: <java.lang.NullPointerException>
+         org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:65)
+         org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:41)
+         org.junit.jupiter.api.Assertions.assertThrows(Assertions.java:3023)
+         tests.MiniSocialMediaTest.lambda$testCreateAccountInvalidHandle$9(MiniSocialMediaTest.java:95)
+         org.junit.jupiter.api.AssertAll.lambda$assertAll$1(AssertAll.java:68)
+         [...]
+       Caused by: java.lang.NullPointerException: Cannot invoke "String.matches(String)" because "<parameter1>" is null
+         socialmedia.SocialMedia.checkHandle(SocialMedia.java:83)
+         socialmedia.SocialMedia.createAccount(SocialMedia.java:133)
+         tests.MiniSocialMediaTest.createAccount(MiniSocialMediaTest.java:58)
+         tests.MiniSocialMediaTest.lambda$testCreateAccountInvalidHandle$8(MiniSocialMediaTest.java:96)
+         org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:55)
+         [...]
+  JUnit Jupiter:SocialMediaTest:testEndorsePostTruncateMessage()
+    MethodSource [className = 'tests.SocialMediaTest', methodName = 'testEndorsePostTruncateMessage', methodParameterTypes = '']
+    => org.opentest4j.AssertionFailedError: Endorsements are posts and should not have a message with more than 100 character. If the length of the original message being endorsed plus the endorsement prefix is over 100, the message should have been truncated. ==> expected: <false> but was: <true>
+       org.junit.jupiter.api.AssertionUtils.fail(AssertionUtils.java:55)
+       org.junit.jupiter.api.AssertFalse.assertFalse(AssertFalse.java:40)
+       org.junit.jupiter.api.Assertions.assertFalse(Assertions.java:218)
+       tests.MiniSocialMediaTest.testEndorsePostTruncateMessage(MiniSocialMediaTest.java:424)
+       java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+       java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+       java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+       java.base/java.lang.reflect.Method.invoke(Method.java:567)
+       org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:688)
+       org.junit.jupiter.engine.execution.MethodInvocation.proceed(MethodInvocation.java:60)
+       [...]
+  JUnit Jupiter:SocialMediaTest:testEndorsePostDoesNotContainPrefix()
+    MethodSource [className = 'tests.SocialMediaTest', methodName = 'testEndorsePostDoesNotContainPrefix', methodParameterTypes = '']
+    => org.opentest4j.AssertionFailedError: EP@ missing in the endorsed message. ==> expected: <true> but was: <false>
+       org.junit.jupiter.api.AssertionUtils.fail(AssertionUtils.java:55)
+       org.junit.jupiter.api.AssertTrue.assertTrue(AssertTrue.java:40)
+       org.junit.jupiter.api.Assertions.assertTrue(Assertions.java:193)
+       tests.MiniSocialMediaTest.testEndorsePostDoesNotContainPrefix(MiniSocialMediaTest.java:432)
+       java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+       java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+       java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+       java.base/java.lang.reflect.Method.invoke(Method.java:567)
+       org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:688)
+       org.junit.jupiter.engine.execution.MethodInvocation.proceed(MethodInvocation.java:60)
+       [...]
+  JUnit Jupiter:SocialMediaTest:testShowPostChildrenDetails()
+    MethodSource [className = 'tests.SocialMediaTest', methodName = 'testShowPostChildrenDetails', methodParameterTypes = '']
+    => org.opentest4j.MultipleFailuresError: Checking post children details based on the Javadoc example: (2 failures)
+	org.opentest4j.AssertionFailedError: checking ID: 1 ==> expected: <7> but was: <13>
+	org.opentest4j.AssertionFailedError: checking ID: 4 ==> expected: <1> but was: <5>
+       org.junit.jupiter.api.AssertAll.assertAll(AssertAll.java:80)
+       org.junit.jupiter.api.AssertAll.assertAll(AssertAll.java:44)
+       org.junit.jupiter.api.Assertions.assertAll(Assertions.java:2911)
+       tests.MiniSocialMediaTest.testShowPostChildrenDetails(MiniSocialMediaTest.java:572)
+       java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+       [...]
+       Suppressed: org.opentest4j.AssertionFailedError: checking ID: 1 ==> expected: <7> but was: <13>
+         org.junit.jupiter.api.AssertionUtils.fail(AssertionUtils.java:55)
+         org.junit.jupiter.api.AssertionUtils.failNotEqual(AssertionUtils.java:62)
+         org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:150)
+         org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:542)
+         tests.MiniSocialMediaTest.lambda$testShowPostChildrenDetails$70(MiniSocialMediaTest.java:573)
+         [...]
+       Suppressed: org.opentest4j.AssertionFailedError: checking ID: 4 ==> expected: <1> but was: <5>
+         org.junit.jupiter.api.AssertionUtils.fail(AssertionUtils.java:55)
+         org.junit.jupiter.api.AssertionUtils.failNotEqual(AssertionUtils.java:62)
+         org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:150)
+         org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:542)
+         tests.MiniSocialMediaTest.lambda$testShowPostChildrenDetails$74(MiniSocialMediaTest.java:585)
+         [...]
+  JUnit Jupiter:SocialMediaTest:testEndorsePostDoesNotContainEndorsedHandle()
+    MethodSource [className = 'tests.SocialMediaTest', methodName = 'testEndorsePostDoesNotContainEndorsedHandle', methodParameterTypes = '']
+    => org.opentest4j.AssertionFailedError: Endorsed account handle missing in the endorsed message. ==> expected: <true> but was: <false>
+       org.junit.jupiter.api.AssertionUtils.fail(AssertionUtils.java:55)
+       org.junit.jupiter.api.AssertTrue.assertTrue(AssertTrue.java:40)
+       org.junit.jupiter.api.Assertions.assertTrue(Assertions.java:193)
+       tests.MiniSocialMediaTest.testEndorsePostDoesNotContainEndorsedHandle(MiniSocialMediaTest.java:440)
+       java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+       java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+       java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+       java.base/java.lang.reflect.Method.invoke(Method.java:567)
+       org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:688)
+       org.junit.jupiter.engine.execution.MethodInvocation.proceed(MethodInvocation.java:60)
+       [...]
+  JUnit Jupiter:SocialMediaTest:testCreateInvalidPost()
+    MethodSource [className = 'tests.SocialMediaTest', methodName = 'testCreateInvalidPost', methodParameterTypes = '']
+    => org.opentest4j.MultipleFailuresError: Checking invalid posts: (1 failure)
+	org.opentest4j.AssertionFailedError: Should not accept a post with more than 100 characters. ==> Expected socialmedia.InvalidPostException to be thrown, but nothing was thrown.
+       org.junit.jupiter.api.AssertAll.assertAll(AssertAll.java:80)
+       org.junit.jupiter.api.AssertAll.assertAll(AssertAll.java:44)
+       org.junit.jupiter.api.Assertions.assertAll(Assertions.java:2911)
+       tests.MiniSocialMediaTest.testCreateInvalidPost(MiniSocialMediaTest.java:376)
+       java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+       [...]
+       Suppressed: org.opentest4j.AssertionFailedError: Should not accept a post with more than 100 characters. ==> Expected socialmedia.InvalidPostException to be thrown, but nothing was thrown.
+         org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:71)
+         org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:41)
+         org.junit.jupiter.api.Assertions.assertThrows(Assertions.java:3023)
+         tests.MiniSocialMediaTest.lambda$testCreateInvalidPost$55(MiniSocialMediaTest.java:391)
+         org.junit.jupiter.api.AssertAll.lambda$assertAll$1(AssertAll.java:68)
+         [...]
+  JUnit Jupiter:SocialMediaTest:testDeletePostCascadeCommentsParentReplacement()
+    MethodSource [className = 'tests.SocialMediaTest', methodName = 'testDeletePostCascadeCommentsParentReplacement', methodParameterTypes = '']
+    => org.opentest4j.AssertionFailedError: Unexpected exception thrown: socialmedia.PostIDNotRecognisedException: Post does not exist!
+       org.junit.jupiter.api.AssertDoesNotThrow.createAssertionFailedError(AssertDoesNotThrow.java:83)
+       org.junit.jupiter.api.AssertDoesNotThrow.assertDoesNotThrow(AssertDoesNotThrow.java:76)
+       org.junit.jupiter.api.AssertDoesNotThrow.assertDoesNotThrow(AssertDoesNotThrow.java:59)
+       org.junit.jupiter.api.Assertions.assertDoesNotThrow(Assertions.java:3120)
+       tests.MiniSocialMediaTest.testDeletePostCascadeCommentsParentReplacement(MiniSocialMediaTest.java:557)
+       [...]
+     Caused by: socialmedia.PostIDNotRecognisedException: Post does not exist!
+       socialmedia.SocialMedia.showIndividualPost(SocialMedia.java:532)
+       tests.MiniSocialMediaTest.lambda$testDeletePostCascadeCommentsParentReplacement$68(MiniSocialMediaTest.java:557)
+       org.junit.jupiter.api.AssertDoesNotThrow.assertDoesNotThrow(AssertDoesNotThrow.java:72)
+       [...]
+  JUnit Jupiter:SocialMediaTest:testGetMostEndorsedAccountAfterRemovingPost()
+    MethodSource [className = 'tests.SocialMediaTest', methodName = 'testGetMostEndorsedAccountAfterRemovingPost', methodParameterTypes = '']
+    => org.opentest4j.AssertionFailedError: After removing post ID: 4 (user3), most endorsed should be user1 ==> expected: <1> but was: <3>
+       org.junit.jupiter.api.AssertionUtils.fail(AssertionUtils.java:55)
+       org.junit.jupiter.api.AssertionUtils.failNotEqual(AssertionUtils.java:62)
+       org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:182)
+       org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:558)
+       tests.MiniSocialMediaTest.testGetMostEndorsedAccountAfterRemovingPost(MiniSocialMediaTest.java:708)
+       java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+       java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+       java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+       java.base/java.lang.reflect.Method.invoke(Method.java:567)
+       org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:688)
+       [...]
+  JUnit Jupiter:SocialMediaTest:testUpdateAccountDescriptionHandleNotRecognised()
+    MethodSource [className = 'tests.SocialMediaTest', methodName = 'testUpdateAccountDescriptionHandleNotRecognised', methodParameterTypes = '']
+    => org.opentest4j.AssertionFailedError: Expected socialmedia.HandleNotRecognisedException to be thrown, but nothing was thrown.
+       org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:71)
+       org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:37)
+       org.junit.jupiter.api.Assertions.assertThrows(Assertions.java:3007)
+       tests.SocialMediaTest.testUpdateAccountDescriptionHandleNotRecognised(SocialMediaTest.java:94)
+       java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+       java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+       java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+       java.base/java.lang.reflect.Method.invoke(Method.java:567)
+       org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:688)
+       org.junit.jupiter.engine.execution.MethodInvocation.proceed(MethodInvocation.java:60)
+       [...]
+  JUnit Jupiter:SocialMediaTest:testRemoveAccountUpdatesCounters()
+    MethodSource [className = 'tests.SocialMediaTest', methodName = 'testRemoveAccountUpdatesCounters', methodParameterTypes = '']
+    => org.opentest4j.MultipleFailuresError: Post counters after removal of account: (1 failure)
+	org.opentest4j.AssertionFailedError: Comment posts counter is wrong. ==> expected: <1> but was: <0>
+       org.junit.jupiter.api.AssertAll.assertAll(AssertAll.java:80)
+       org.junit.jupiter.api.AssertAll.assertAll(AssertAll.java:44)
+       org.junit.jupiter.api.Assertions.assertAll(Assertions.java:2911)
+       tests.SocialMediaTest.testRemoveAccountUpdatesCounters(SocialMediaTest.java:54)
+       java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+       [...]
+       Suppressed: org.opentest4j.AssertionFailedError: Comment posts counter is wrong. ==> expected: <1> but was: <0>
+         org.junit.jupiter.api.AssertionUtils.fail(AssertionUtils.java:55)
+         org.junit.jupiter.api.AssertionUtils.failNotEqual(AssertionUtils.java:62)
+         org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:150)
+         org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:542)
+         tests.SocialMediaTest.lambda$testRemoveAccountUpdatesCounters$1(SocialMediaTest.java:56)
+         [...]
+  JUnit Jupiter:SocialMediaTest:testGetTotalCommentPosts()
+    MethodSource [className = 'tests.SocialMediaTest', methodName = 'testGetTotalCommentPosts', methodParameterTypes = '']
+    => org.opentest4j.MultipleFailuresError: Number of comment posts: (1 failure)
+	org.opentest4j.AssertionFailedError: After adding and removing posts. ==> expected: <1> but was: <0>
+       org.junit.jupiter.api.AssertAll.assertAll(AssertAll.java:80)
+       org.junit.jupiter.api.AssertAll.assertAll(AssertAll.java:44)
+       org.junit.jupiter.api.Assertions.assertAll(Assertions.java:2911)
+       tests.SocialMediaTest.testGetTotalCommentPosts(SocialMediaTest.java:144)
+       java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+       [...]
+       Suppressed: org.opentest4j.AssertionFailedError: After adding and removing posts. ==> expected: <1> but was: <0>
+         org.junit.jupiter.api.AssertionUtils.fail(AssertionUtils.java:55)
+         org.junit.jupiter.api.AssertionUtils.failNotEqual(AssertionUtils.java:62)
+         org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:150)
+         org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:542)
+         tests.SocialMediaTest.lambda$testGetTotalCommentPosts$17(SocialMediaTest.java:150)
+         [...]
+
+Test run finished after 771 ms
+[         3 containers found      ]
+[         0 containers skipped    ]
+[         3 containers started    ]
+[         0 containers aborted    ]
+[         3 containers successful ]
+[         0 containers failed     ]
+[        58 tests found           ]
+[         0 tests skipped         ]
+[        58 tests started         ]
+[         0 tests aborted         ]
+[        46 tests successful      ]
+[        12 tests failed          ]
+
